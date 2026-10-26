@@ -3,384 +3,350 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shanta Yoga｜本場インドの、静けさに還るヨーガ　慎クリシュナ</title>
-<meta name="description" content="ポーズの完成度を競わない、本場インドで体感してきたヨーガ。呼吸法と瞑想を軸に、短く、簡単に、頑張りすぎた体と心を優しくほぐす。体が硬くても、ズボラでも大丈夫。">
+<title>Shanta Meditation｜揺らがない心へ還る、本物の瞑想　慎クリシュナ</title>
+<meta name="description" content="呼吸法と瞑想を軸にした、本物の瞑想の場。マインドフルネスのその先、揺らがない精神・満たされた心・欲求や感情から自由な状態へ。瞑想に本気で向き合いたい方へ。まずは無料体験から。">
+<meta property="og:title" content="Shanta Meditation｜揺らがない心へ還る、本物の瞑想">
+<meta property="og:description" content="呼吸法と瞑想を軸にした、本物の瞑想の場。揺らがない精神、満たされた心、欲求や感情から自由な状態へ。まずは無料体験から。">
+<meta property="og:type" content="website">
+<!-- <meta property="og:image" content="OGP画像URLをここに"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#2e2a26;
-  --ink-soft:#5c554d;
-  --sand:#f6f1e8;
-  --sand-deep:#ece3d3;
-  --terra:#b0602f;
-  --terra-deep:#8f4a20;
-  --gold:#c99b4a;
-  --moss:#5a6650;
-  --night:#211d1a;
+  --paper:#fbfaf6;
+  --paper-2:#ffffff;
+  --paper-3:#f3f0e8;
+  --sumi:#201e1a;
+  --sumi-2:#4b463e;
+  --mist:#8d887d;
+  --line:rgba(32,30,26,.12);
+  --line-soft:rgba(32,30,26,.07);
+  --accent:#9a7a4a;
   --serif:'Shippori Mincho','Hiragino Mincho ProN',serif;
   --sans:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif;
   --latin:'Cormorant Garamond',serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--sand);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--sans);color:var(--sumi);background:var(--paper);line-height:2;font-weight:300;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 
 /* ---------- utilities ---------- */
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-.narrow{max-width:720px;margin:0 auto;padding:0 24px}
-.section{padding:110px 0}
-.eyebrow{font-family:var(--latin);font-size:14px;letter-spacing:.35em;text-transform:uppercase;color:var(--terra);margin-bottom:18px}
-.h2{font-family:var(--serif);font-size:clamp(26px,4.2vw,38px);font-weight:600;line-height:1.6;letter-spacing:.06em}
-.lead{color:var(--ink-soft);margin-top:22px;font-size:16.5px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+.narrow{max-width:680px;margin:0 auto;padding:0 28px}
+.section{padding:clamp(80px,13vw,150px) 0}
+.eyebrow{font-family:var(--latin);font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
+.h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,33px);font-weight:500;line-height:1.75;letter-spacing:.09em}
+.lead{color:var(--sumi-2);margin-top:26px;font-size:16px;line-height:2.1}
 .center{text-align:center}
-
-/* fade-in on scroll */
-.fx{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.fx{opacity:0;transform:translateY(24px);transition:opacity 1.1s ease,transform 1.1s ease}
 .fx.on{opacity:1;transform:none}
 
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--sumi);color:var(--paper);font-weight:400;letter-spacing:.14em;padding:18px 40px;border-radius:2px;font-size:14.5px;transition:background .35s,transform .35s;position:relative}
+.btn:hover{background:#000;transform:translateY(-2px)}
+.btn .free{font-family:var(--latin);font-size:11px;letter-spacing:.2em;background:var(--accent);color:#fff;padding:3px 9px;border-radius:2px}
+.btn-line{display:inline-block;font-size:14px;letter-spacing:.14em;border-bottom:1px solid var(--sumi);padding-bottom:4px;transition:opacity .3s}
+.btn-line:hover{opacity:.55}
+
 /* ---------- nav ---------- */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;transition:background .4s,box-shadow .4s}
-nav.scrolled{background:rgba(246,241,232,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(46,42,38,.08)}
-.brand{font-family:var(--latin);font-size:19px;letter-spacing:.3em;font-weight:500;color:var(--sand)}
-nav.scrolled .brand{color:var(--ink)}
-.nav-links{display:flex;gap:30px;align-items:center;font-size:13.5px;letter-spacing:.12em}
-.nav-links a{color:var(--sand);opacity:.9;transition:opacity .3s}
-nav.scrolled .nav-links a{color:var(--ink)}
-.nav-links a:hover{opacity:.6}
-.nav-cta{background:var(--terra);color:#fff !important;padding:10px 22px;border-radius:999px;opacity:1 !important;transition:background .3s}
-.nav-cta:hover{background:var(--terra-deep)}
-@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 30px;transition:background .5s,box-shadow .5s,padding .5s}
+nav.scrolled{background:rgba(251,250,246,.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px}
+.brand{font-family:var(--latin);font-size:20px;letter-spacing:.3em;font-weight:500}
+.nav-links{display:flex;gap:30px;align-items:center;font-size:13px;letter-spacing:.14em;color:var(--sumi-2)}
+.nav-links a:not(.nav-cta){transition:color .3s}
+.nav-links a:not(.nav-cta):hover{color:var(--sumi)}
+.nav-cta{background:var(--sumi);color:var(--paper) !important;padding:10px 22px;border-radius:2px;letter-spacing:.12em}
+.nav-cta:hover{background:#000}
+@media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--sand);background:linear-gradient(175deg,#1c1a20 0%,#2c2330 30%,#59372e 62%,#a05a33 88%,#c98147 100%);overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 42% at 50% 88%,rgba(255,196,120,.35),transparent 70%);pointer-events:none}
-.sun{position:absolute;left:50%;bottom:-90px;transform:translateX(-50%);width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,209,140,.9),rgba(224,130,60,.55) 55%,transparent 72%);filter:blur(2px);animation:breathe 7s ease-in-out infinite}
-@keyframes breathe{0%,100%{transform:translateX(-50%) scale(1);opacity:.85}50%{transform:translateX(-50%) scale(1.07);opacity:1}}
-.hero-inner{position:relative;z-index:2;padding:120px 24px 140px;max-width:860px}
-.hero-q{font-family:var(--serif);font-size:clamp(15px,2.4vw,19px);letter-spacing:.22em;opacity:.85;margin-bottom:34px}
-.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,6vw,54px);line-height:1.75;letter-spacing:.08em}
-.hero h1 em{font-style:normal;color:#f4c988}
-.hero-sub{margin-top:30px;font-size:clamp(14px,2vw,16.5px);letter-spacing:.14em;opacity:.9}
-.hero-brand{font-family:var(--latin);letter-spacing:.5em;font-size:clamp(13px,1.8vw,16px);margin-top:46px;opacity:.75}
-.hero-cta{display:inline-block;margin-top:38px;background:rgba(246,241,232,.96);color:var(--terra-deep);font-weight:700;letter-spacing:.14em;padding:17px 46px;border-radius:999px;font-size:15px;transition:transform .3s,box-shadow .3s}
-.hero-cta:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.3)}
-.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;font-family:var(--latin);font-size:11px;letter-spacing:.35em;opacity:.6;color:var(--sand)}
-.scroll-hint::after{content:"";display:block;width:1px;height:34px;background:var(--sand);margin:10px auto 0;animation:drip 2.2s ease-in-out infinite}
-@keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--paper);overflow:hidden}
+.enso{position:absolute;top:50%;left:50%;transform:translate(-50%,-54%);width:min(74vw,560px);height:min(74vw,560px);opacity:.5;pointer-events:none}
+.enso circle{fill:none;stroke:#e4d9c4;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1210;stroke-dashoffset:150;transform:rotate(128deg);transform-origin:center}
+.hero-inner{position:relative;z-index:2;padding:130px 24px}
+.hero-q{font-family:var(--serif);font-size:clamp(14px,2.2vw,17px);letter-spacing:.24em;color:var(--sumi-2);margin-bottom:34px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(29px,6vw,52px);line-height:1.85;letter-spacing:.11em}
+.hero-sub{margin-top:34px;font-size:clamp(13.5px,1.9vw,16px);letter-spacing:.12em;color:var(--sumi-2);line-height:2.1}
+.hero-actions{margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.hero-reassure{font-size:12.5px;letter-spacing:.14em;color:var(--mist)}
+.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;font-family:var(--latin);font-size:11px;letter-spacing:.34em;color:var(--mist)}
+.scroll-hint::after{content:"";display:block;width:1px;height:40px;background:var(--line);margin:12px auto 0}
 
 /* ---------- empathy ---------- */
-.empathy{background:var(--sand)}
-.check-list{margin-top:44px;display:grid;gap:16px}
-.check{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:14px;padding:22px 26px;font-size:16px;box-shadow:0 2px 12px rgba(46,42,38,.04)}
-.check .dot{flex:none;width:26px;height:26px;border-radius:50%;background:var(--sand-deep);color:var(--terra);display:grid;place-items:center;font-size:14px;margin-top:4px}
-.empathy-close{margin-top:46px;font-family:var(--serif);font-size:clamp(19px,3vw,24px);line-height:2;letter-spacing:.08em;text-align:center}
-.empathy-close strong{color:var(--terra);font-weight:600}
+.check-list{margin-top:48px;display:grid;gap:0;border-top:1px solid var(--line)}
+.check{display:flex;gap:20px;align-items:baseline;padding:22px 4px;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--sumi-2)}
+.check .n{font-family:var(--latin);font-size:14px;letter-spacing:.1em;color:var(--accent);flex:none;width:30px}
+.empathy-close{margin-top:56px;font-family:var(--serif);font-size:clamp(18px,2.8vw,23px);line-height:2.1;letter-spacing:.08em;text-align:center}
+.empathy-close b{font-weight:500;color:var(--sumi)}
 
 /* ---------- difference ---------- */
-.diff{background:var(--night);color:var(--sand);position:relative}
-.diff .eyebrow{color:var(--gold)}
-.diff .lead{color:rgba(246,241,232,.72)}
-.diff-grid{margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.diff{background:var(--paper-3)}
+.diff-grid{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
 @media(max-width:820px){.diff-grid{grid-template-columns:1fr}}
-.diff-card{background:rgba(246,241,232,.05);border:1px solid rgba(246,241,232,.14);border-radius:18px;padding:38px 30px;transition:transform .4s,border-color .4s}
-.diff-card:hover{transform:translateY(-6px);border-color:rgba(201,155,74,.5)}
-.diff-num{font-family:var(--latin);font-size:15px;letter-spacing:.3em;color:var(--gold)}
-.diff-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin:16px 0 14px;line-height:1.7;letter-spacing:.05em}
-.diff-card p{font-size:14.5px;color:rgba(246,241,232,.78);line-height:2}
-.shanta-note{margin-top:64px;text-align:center;border-top:1px solid rgba(246,241,232,.12);padding-top:56px}
-.shanta-word{font-family:var(--latin);font-size:clamp(34px,5vw,48px);letter-spacing:.24em;color:var(--gold)}
-.shanta-word span{font-size:.45em;letter-spacing:.3em;display:block;margin-top:6px;color:rgba(246,241,232,.6)}
-.shanta-note p{max-width:620px;margin:26px auto 0;font-size:15.5px;color:rgba(246,241,232,.8)}
+.diff-card{padding:12px 34px;border-left:1px solid var(--line)}
+.diff-card:first-child{border-left:none}
+@media(max-width:820px){.diff-card{border-left:none;border-top:1px solid var(--line);padding:38px 4px}.diff-card:first-child{border-top:none}}
+.diff-num{font-family:var(--latin);font-size:15px;letter-spacing:.3em;color:var(--accent)}
+.diff-card h3{font-family:var(--serif);font-size:19px;font-weight:500;margin:18px 0 16px;line-height:1.8;letter-spacing:.05em}
+.diff-card p{font-size:14.5px;color:var(--sumi-2);line-height:2.05}
+
+/* ---------- shanta meaning ---------- */
+.meaning{background:var(--sumi);color:var(--paper);text-align:center}
+.meaning .eyebrow{color:#caa96e}
+.shanta-word{font-family:var(--latin);font-size:clamp(44px,7vw,68px);letter-spacing:.2em;color:var(--paper);font-weight:400;line-height:1.2}
+.shanta-word span{font-size:.26em;letter-spacing:.26em;display:block;margin-top:16px;color:rgba(251,250,246,.6);font-family:var(--sans)}
+.meaning-lead{max-width:600px;margin:40px auto 0;font-size:16px;color:rgba(251,250,246,.8);line-height:2.2}
+.meaning-lead b{color:var(--paper);font-weight:400}
+.aims{margin:56px auto 0;max-width:640px;display:grid;gap:0;border-top:1px solid rgba(251,250,246,.18)}
+.aim{padding:28px 10px;border-bottom:1px solid rgba(251,250,246,.18)}
+.aim h3{font-family:var(--serif);font-size:clamp(18px,2.6vw,22px);font-weight:500;letter-spacing:.08em;color:var(--paper)}
+.aim p{font-size:14px;color:rgba(251,250,246,.65);margin-top:10px;line-height:2}
+.meaning-close{margin-top:50px;font-family:var(--serif);font-size:clamp(16px,2.4vw,20px);line-height:2;letter-spacing:.07em;color:var(--paper)}
+.meaning-link{margin-top:40px}
+.meaning .btn-line{border-color:rgba(251,250,246,.5);color:var(--paper)}
+
+/* ---------- free trial ---------- */
+.trial{background:var(--paper-3)}
+.trial-steps{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+@media(max-width:760px){.trial-steps{grid-template-columns:1fr;gap:44px}}
+.tstep{text-align:center}
+.tstep .tn{font-family:var(--latin);font-size:30px;letter-spacing:.1em;color:var(--accent);padding-bottom:18px;border-bottom:1px solid var(--line);display:inline-block;margin-bottom:22px;min-width:64px}
+.tstep h3{font-family:var(--serif);font-size:18px;font-weight:500;letter-spacing:.06em;margin-bottom:12px}
+.tstep p{font-size:14px;color:var(--sumi-2);line-height:2}
+.trial-cta{text-align:center;margin-top:62px}
+.trial-note{margin-top:20px;font-size:12.5px;letter-spacing:.12em;color:var(--mist)}
 
 /* ---------- flow ---------- */
-.flow{background:linear-gradient(180deg,var(--sand) 0%,var(--sand-deep) 100%)}
-.flow-steps{margin-top:56px;display:grid;gap:0}
-.step{display:grid;grid-template-columns:72px 1fr;gap:26px;position:relative;padding-bottom:44px}
+.flow-steps{margin-top:60px;display:grid;gap:0}
+.step{display:grid;grid-template-columns:64px 1fr;gap:28px;position:relative;padding-bottom:46px}
 .step:last-child{padding-bottom:0}
-.step::before{content:"";position:absolute;left:35px;top:72px;bottom:0;width:1px;background:rgba(176,96,47,.3)}
+.step::before{content:"";position:absolute;left:31px;top:64px;bottom:0;width:1px;background:var(--line)}
 .step:last-child::before{display:none}
-.step-icon{width:72px;height:72px;border-radius:50%;background:#fff;border:1px solid rgba(176,96,47,.25);display:grid;place-items:center;font-family:var(--latin);font-size:24px;letter-spacing:.08em;color:var(--terra);box-shadow:0 4px 14px rgba(46,42,38,.06)}
-.step h3{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.06em;padding-top:8px}
-.step h3 small{font-family:var(--latin);font-size:12px;letter-spacing:.25em;color:var(--terra);display:block;margin-bottom:4px;text-transform:uppercase}
-.step p{color:var(--ink-soft);font-size:14.5px;margin-top:8px;max-width:560px}
-
-/* ---------- schedule ---------- */
-.sched{background:var(--sand)}
-.sched-list{margin-top:52px;display:grid;gap:16px}
-.sched-card{display:grid;grid-template-columns:190px 1fr;gap:24px;background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:16px;padding:30px 32px;box-shadow:0 2px 12px rgba(46,42,38,.04);align-items:center}
-@media(max-width:640px){.sched-card{grid-template-columns:1fr;gap:10px}}
-.sched-when{border-right:1px solid rgba(176,96,47,.2);padding-right:20px}
-@media(max-width:640px){.sched-when{border-right:none;border-bottom:1px solid rgba(176,96,47,.2);padding:0 0 10px}}
-.sched-days{font-size:13px;letter-spacing:.18em;color:var(--terra);font-weight:700}
-.sched-time{font-family:var(--latin);font-size:26px;letter-spacing:.06em;color:var(--ink);margin-top:4px}
-.sched-card h3{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.05em}
-.sched-card p{font-size:14.5px;color:var(--ink-soft);margin-top:6px}
-.archive-note{margin-top:26px;text-align:center;background:var(--sand-deep);border-radius:999px;padding:14px 26px;font-size:14px;letter-spacing:.08em;color:var(--terra-deep)}
-.why-morning{margin-top:80px;text-align:center;border-top:1px solid rgba(176,96,47,.18);padding-top:64px}
-.why-morning h3{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);font-weight:600;letter-spacing:.08em}
-.why-morning .sunrise{width:64px;height:32px;margin:0 auto 26px;position:relative;overflow:hidden}
-.why-morning .sunrise::before{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:-32px;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#f4c988,var(--terra) 70%)}
-.why-morning p{max-width:600px;margin:24px auto 0;color:var(--ink-soft);font-size:15.5px}
-.why-morning strong{color:var(--terra-deep)}
-
-/* ---------- price ---------- */
-.price{background:linear-gradient(180deg,var(--sand-deep) 0%,var(--sand) 100%)}
-.price-card{margin:56px auto 0;max-width:640px;background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:24px;padding:56px 40px 48px;text-align:center;box-shadow:0 12px 40px rgba(46,42,38,.08)}
-.price-label{font-size:13.5px;letter-spacing:.2em;color:var(--terra);font-weight:700}
-.price-num{font-family:var(--latin);font-size:clamp(54px,9vw,76px);line-height:1.1;color:var(--ink);margin-top:10px}
-.price-num small{font-size:.32em;color:var(--ink-soft);letter-spacing:.08em}
-.price-per{margin-top:22px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.per-chip{background:var(--sand);border:1px solid rgba(176,96,47,.25);border-radius:999px;padding:9px 20px;font-size:13.5px;letter-spacing:.06em;color:var(--terra-deep)}
-.per-chip strong{font-size:1.15em}
-.price-inc{margin-top:36px;text-align:left;display:grid;gap:12px;border-top:1px solid rgba(46,42,38,.08);padding-top:32px}
-.inc{display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
-.inc .ok{flex:none;width:22px;height:22px;border-radius:50%;background:var(--terra);color:#fff;display:grid;place-items:center;font-size:12px;margin-top:4px}
-.inc small{display:block;color:var(--ink-soft);font-size:12.5px}
-.price-note{margin-top:30px;font-size:13.5px;color:var(--ink-soft);line-height:2}
-.price-note strong{color:var(--terra-deep)}
-.price-cta{display:inline-block;margin-top:28px;background:var(--terra);color:#fff;font-weight:700;letter-spacing:.14em;padding:16px 44px;border-radius:999px;font-size:14.5px;transition:background .3s,transform .3s}
-.price-cta:hover{background:var(--terra-deep);transform:translateY(-2px)}
+.step-icon{width:64px;height:64px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--latin);font-size:22px;color:var(--accent);background:var(--paper)}
+.step h3{font-family:var(--serif);font-size:18.5px;font-weight:500;letter-spacing:.06em;padding-top:12px}
+.step h3 small{font-family:var(--latin);font-size:12px;letter-spacing:.24em;color:var(--accent);display:block;margin-bottom:6px;text-transform:uppercase}
+.step p{color:var(--sumi-2);font-size:14.5px;margin-top:10px;max-width:540px}
 
 /* ---------- voices ---------- */
-.voices{background:var(--sand)}
-.voice-grid{margin-top:56px;columns:2;column-gap:22px}
+.voices{background:var(--paper-3)}
+.voice-grid{margin-top:60px;columns:2;column-gap:26px}
 @media(max-width:760px){.voice-grid{columns:1}}
-.voice{break-inside:avoid;background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:18px;padding:34px 30px;margin-bottom:22px;box-shadow:0 2px 14px rgba(46,42,38,.05);position:relative}
-.voice::before{content:"“";font-family:var(--latin);font-size:54px;line-height:1;color:var(--gold);position:absolute;top:18px;left:24px;opacity:.55}
-.voice h3{font-family:var(--serif);font-size:17.5px;font-weight:600;line-height:1.9;letter-spacing:.04em;padding-top:26px;color:var(--terra-deep)}
-.voice p{font-size:14px;color:var(--ink-soft);margin-top:14px;line-height:2.05}
-.voice .who{margin-top:20px;font-size:12.5px;letter-spacing:.15em;color:var(--ink-soft);display:flex;align-items:center;gap:10px}
-.voice .who::before{content:"";width:22px;height:1px;background:var(--gold)}
+.voice{break-inside:avoid;background:var(--paper-2);border:1px solid var(--line);border-radius:3px;padding:36px 32px;margin-bottom:26px}
+.voice h3{font-family:var(--serif);font-size:17px;font-weight:500;line-height:1.95;letter-spacing:.04em;color:var(--sumi)}
+.voice p{font-size:14px;color:var(--sumi-2);margin-top:16px;line-height:2.1}
+.voice .who{margin-top:22px;font-family:var(--latin);font-size:13px;letter-spacing:.16em;color:var(--mist);display:flex;align-items:center;gap:12px}
+.voice .who::before{content:"";width:24px;height:1px;background:var(--accent)}
 
 /* ---------- teacher ---------- */
-.teacher{background:var(--sand)}
-.teacher-grid{display:grid;grid-template-columns:380px 1fr;gap:64px;align-items:center}
-@media(max-width:860px){.teacher-grid{grid-template-columns:1fr;gap:44px}}
-.portrait{aspect-ratio:4/5;border-radius:200px 200px 18px 18px;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(46,42,38,.18)}
+.teacher-grid{display:grid;grid-template-columns:360px 1fr;gap:70px;align-items:center}
+@media(max-width:860px){.teacher-grid{grid-template-columns:1fr;gap:46px}}
+.portrait{aspect-ratio:4/5;border-radius:3px;overflow:hidden;filter:grayscale(.15)}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.teacher-name{font-family:var(--serif);font-size:clamp(26px,3.6vw,34px);font-weight:600;letter-spacing:.1em;margin-top:14px}
-.teacher-name small{font-family:var(--latin);display:block;font-size:14px;letter-spacing:.3em;color:var(--terra);margin-bottom:10px;text-transform:uppercase}
-.teacher-bio{margin-top:26px;color:var(--ink-soft);font-size:15.5px}
-.teacher-bio p+p{margin-top:18px}
-.teacher-bio strong{color:var(--ink)}
-.creds{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
-.cred{font-size:12.5px;letter-spacing:.08em;border:1px solid rgba(176,96,47,.35);color:var(--terra-deep);border-radius:999px;padding:7px 16px;background:#fff}
+.teacher-name{font-family:var(--serif);font-size:clamp(25px,3.4vw,32px);font-weight:500;letter-spacing:.1em;margin-top:16px}
+.teacher-name small{font-family:var(--latin);display:block;font-size:14px;letter-spacing:.3em;color:var(--accent);margin-bottom:12px;text-transform:uppercase}
+.teacher-bio{margin-top:28px;color:var(--sumi-2);font-size:15px}
+.teacher-bio p+p{margin-top:20px}
+.teacher-bio b{font-weight:500;color:var(--sumi)}
+.creds{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px}
+.cred{font-size:12.5px;letter-spacing:.08em;border:1px solid var(--line);color:var(--sumi-2);border-radius:2px;padding:8px 16px}
+
+/* ---------- schedule ---------- */
+.sched{background:var(--paper-3)}
+.sched-list{margin-top:56px;display:grid;gap:0;border-top:1px solid var(--line)}
+.sched-card{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:30px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+@media(max-width:640px){.sched-card{grid-template-columns:1fr;gap:8px}}
+.sched-days{font-family:var(--latin);font-size:13px;letter-spacing:.14em;color:var(--accent)}
+.sched-time{font-family:var(--latin);font-size:25px;letter-spacing:.05em;color:var(--sumi);margin-top:6px}
+.sched-card h3{font-family:var(--serif);font-size:18px;font-weight:500;letter-spacing:.05em}
+.sched-card p{font-size:14px;color:var(--sumi-2);margin-top:8px}
+.archive-note{margin-top:30px;text-align:center;font-size:13.5px;letter-spacing:.08em;color:var(--sumi-2)}
+.why-morning{margin-top:88px;text-align:center;border-top:1px solid var(--line);padding-top:68px}
+.why-morning h3{font-family:var(--serif);font-size:clamp(21px,3.2vw,28px);font-weight:500;letter-spacing:.08em}
+.why-morning p{max-width:580px;margin:26px auto 0;color:var(--sumi-2);font-size:15px}
+.why-morning b{font-weight:500;color:var(--sumi)}
+
+/* ---------- price ---------- */
+.price-card{margin:58px auto 0;max-width:600px;background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:clamp(40px,6vw,60px) clamp(28px,5vw,48px);text-align:center}
+.price-intro{font-size:14.5px;color:var(--sumi-2);letter-spacing:.06em;margin-bottom:34px}
+.price-intro b{font-weight:500;color:var(--sumi)}
+.price-label{font-size:13px;letter-spacing:.18em;color:var(--accent);font-family:var(--latin);text-transform:uppercase}
+.price-num{font-family:var(--latin);font-size:clamp(50px,9vw,72px);line-height:1.1;color:var(--sumi);margin-top:12px;font-weight:500}
+.price-num small{font-size:.3em;color:var(--sumi-2);letter-spacing:.08em}
+.price-per{margin-top:24px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.per-chip{border:1px solid var(--line);border-radius:2px;padding:9px 18px;font-size:13px;letter-spacing:.05em;color:var(--sumi-2)}
+.per-chip b{font-weight:500;color:var(--sumi)}
+.price-inc{margin-top:38px;text-align:left;display:grid;gap:14px;border-top:1px solid var(--line);padding-top:34px}
+.inc{display:flex;gap:14px;align-items:flex-start;font-size:14.5px}
+.inc .ok{flex:none;width:18px;height:10px;border-left:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);transform:rotate(-45deg);margin-top:8px}
+.inc small{display:block;color:var(--mist);font-size:12.5px;margin-top:2px}
+.price-note{margin-top:34px;font-size:13.5px;color:var(--sumi-2);line-height:2}
+.price-note b{font-weight:500;color:var(--sumi)}
 
 /* ---------- faq ---------- */
-.faq{background:#fff}
-.faq-list{margin-top:48px;display:grid;gap:14px}
-details{border:1px solid rgba(46,42,38,.1);border-radius:14px;background:var(--sand);overflow:hidden}
-summary{cursor:pointer;list-style:none;padding:22px 26px;font-weight:700;font-size:15.5px;display:flex;justify-content:space-between;align-items:center;gap:16px;letter-spacing:.04em}
+.faq-list{margin-top:50px;display:grid;gap:0;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:26px 4px;font-weight:400;font-size:15.5px;display:flex;justify-content:space-between;align-items:center;gap:16px;letter-spacing:.04em}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"＋";color:var(--terra);font-weight:400;flex:none;transition:transform .3s}
-details[open] summary::after{transform:rotate(45deg)}
-.faq-a{padding:0 26px 24px;color:var(--ink-soft);font-size:14.5px}
-.faq-a strong{color:var(--terra-deep)}
+summary::after{content:"";flex:none;width:11px;height:11px;border-right:1px solid var(--accent);border-bottom:1px solid var(--accent);transform:rotate(45deg);transition:transform .3s;margin-top:-4px}
+details[open] summary::after{transform:rotate(-135deg);margin-top:2px}
+.faq-a{padding:0 4px 28px;color:var(--sumi-2);font-size:14.5px;max-width:600px}
+.faq-a b{font-weight:500;color:var(--sumi)}
 
 /* ---------- final cta ---------- */
-.final{position:relative;background:linear-gradient(175deg,#2c2330 0%,#59372e 55%,#a05a33 100%);color:var(--sand);text-align:center;overflow:hidden}
-.final::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 50% 100%,rgba(255,196,120,.3),transparent 70%)}
-.final .wrap{position:relative;z-index:2}
-.final h2{font-family:var(--serif);font-size:clamp(24px,4.4vw,38px);font-weight:600;line-height:1.8;letter-spacing:.08em}
-.final p{margin-top:24px;opacity:.85;font-size:15.5px;letter-spacing:.08em}
-.final .hero-cta{margin-top:40px}
-.final-note{font-size:13px;opacity:.65;margin-top:18px;letter-spacing:.12em}
+.final{background:var(--paper);text-align:center;position:relative;overflow:hidden}
+.final .enso{opacity:.4}
+.final-inner{position:relative;z-index:2}
+.final h2{font-family:var(--serif);font-size:clamp(22px,4vw,34px);font-weight:500;line-height:1.9;letter-spacing:.08em}
+.final p{margin-top:26px;color:var(--sumi-2);font-size:15px;letter-spacing:.06em}
+.final .btn{margin-top:42px}
+.final-note{font-size:12.5px;color:var(--mist);margin-top:20px;letter-spacing:.12em}
 
 /* ---------- footer ---------- */
-footer{background:var(--night);color:rgba(246,241,232,.55);text-align:center;padding:44px 24px;font-size:12.5px;letter-spacing:.15em}
-footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;color:rgba(246,241,232,.85);margin-bottom:10px}
+footer{background:var(--paper-3);color:var(--sumi-2);text-align:center;padding:56px 24px;font-size:12.5px;letter-spacing:.14em;border-top:1px solid var(--line)}
+footer .brand-f{font-family:var(--latin);letter-spacing:.34em;font-size:17px;color:var(--sumi);margin-bottom:14px}
+footer a{border-bottom:1px solid var(--line);padding-bottom:2px}
+
+/* ---------- mobile sticky cta ---------- */
+.m-cta{display:none}
+@media(max-width:860px){
+  .m-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:120;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(251,250,246,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .m-cta a{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--sumi);color:var(--paper);padding:15px;border-radius:2px;font-size:15px;letter-spacing:.12em}
+  .m-cta a .free{font-family:var(--latin);font-size:11px;letter-spacing:.2em;background:var(--accent);color:#fff;padding:3px 9px;border-radius:2px}
+  body{padding-bottom:78px}
+}
 </style>
 </head>
 <body>
 
 <nav id="nav">
-  <a class="brand" href="#top">Shanta Yoga</a>
+  <a class="brand" href="#top">Shanta Meditation</a>
   <div class="nav-links">
-    <a href="#difference">Shanta Yogaとは</a>
-    <a href="philosophy.html">ヨーガの教え</a>
-    <a href="#flow">クラスの流れ</a>
+    <a href="#difference">Shanta Meditationとは</a>
+    <a href="#meaning">Shantaの意味</a>
+    <a href="#flow">瞑想の流れ</a>
     <a href="#schedule">スケジュール</a>
     <a href="#price">料金</a>
     <a href="#teacher">主宰者</a>
-    <a href="#faq">よくある質問</a>
-    <a class="nav-cta" href="#reserve">体験する</a>
+    <a class="nav-cta" href="#reserve">無料体験する</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="sun" aria-hidden="true"></div>
+  <svg class="enso" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="192"/></svg>
   <div class="hero-inner">
-    <p class="hero-q">頑張るヨガに、少し疲れていませんか。</p>
-    <h1>外に向かう毎日から、<br><em>内に還るひととき。</em></h1>
-    <p class="hero-sub">本場インドで体感してきたヨーガを、短く、簡単に、心地よく。<br>体が硬くても、ズボラでも、そのままで大丈夫。</p>
-    <p class="hero-brand">Shanta Yoga　静けさに還る</p>
-    <a class="hero-cta" href="#reserve">体験クラスに参加する</a>
+    <p class="hero-q">その瞑想は、深まっていますか。</p>
+    <h1>外に向かう毎日から、<br>内に還るひととき。</h1>
+    <p class="hero-sub">呼吸法と瞑想を軸にした、本物の瞑想の場。<br>マインドフルネスのその先、揺らがない静けさへ。</p>
+    <div class="hero-actions">
+      <a class="btn" href="#reserve"><span class="free">FREE</span>まずは無料体験に参加する</a>
+      <span class="hero-reassure">瞑想に、本気で向き合いたい方へ。</span>
+    </div>
   </div>
   <div class="scroll-hint">SCROLL</div>
 </header>
 
 <!-- EMPATHY -->
-<section class="section empathy">
+<section class="section" id="empathy">
   <div class="narrow">
-    <div class="fx">
-      <p class="eyebrow center">Is this you?</p>
-      <h2 class="h2 center">こんな気持ち、<br>心当たりはありませんか。</h2>
+    <div class="fx center">
+      <p class="eyebrow">Is this you?</p>
+      <h2 class="h2">その瞑想に、<br>こんな手応えのなさは、ありませんか。</h2>
     </div>
     <div class="check-list">
-      <div class="check fx"><span class="dot">✦</span><span>ヨガのポーズは覚えたけれど、<strong>「なにかが足りない」</strong>感覚が残る</span></div>
-      <div class="check fx"><span class="dot">✦</span><span>体が硬いから、ヨガは自分には無理だと思っている</span></div>
-      <div class="check fx"><span class="dot">✦</span><span>キラキラしたスタジオの雰囲気に、正直ハードルの高さを感じる</span></div>
-      <div class="check fx"><span class="dot">✦</span><span>続けるのが苦手。ストイックなことは3日ともたない</span></div>
-      <div class="check fx"><span class="dot">✦</span><span>頑張りすぎて、頭も心も休まる暇がない</span></div>
+      <div class="check fx"><span class="n">01</span><span>瞑想を試したけれど、ただ目を閉じて座っているだけで終わってしまう</span></div>
+      <div class="check fx"><span class="n">02</span><span>アプリや動画で続けても、「深まっている」という実感がない</span></div>
+      <div class="check fx"><span class="n">03</span><span>独学でやってきたが、これで合っているのか、確かめる相手がいない</span></div>
+      <div class="check fx"><span class="n">04</span><span>心がいつもざわついていて、静けさが遠い</span></div>
+      <div class="check fx"><span class="n">05</span><span>感情や欲求に振り回される自分を、根本から変えたい</span></div>
     </div>
-    <p class="empathy-close fx">その感覚は、あなたのせいではありません。<br><strong>「動き」だけを切り取ったヨガ</strong>では、<br>本来のヨーガの半分しか届いていないからです。</p>
+    <p class="empathy-close fx">その「深まらなさ」は、あなたの集中力のせいではありません。<br><b>瞑想の土台となる「呼吸」</b>が、まだ整っていないからです。</p>
   </div>
 </section>
 
 <!-- DIFFERENCE -->
 <section class="section diff" id="difference">
   <div class="wrap">
-    <div class="fx">
-      <p class="eyebrow">Why Shanta Yoga</p>
-      <h2 class="h2">Shanta Yogaが、<br>他のヨガと違う3つの理由。</h2>
-      <p class="lead">インドで生まれたヨーガは本来、ポーズ（アーサナ）はほんの入り口。呼吸法と瞑想を通じて「内側の静けさ」に還るための、体系だった智慧です。Shanta Yogaはその全体を、日本の暮らしに合うかたちで届けます。</p>
+    <div class="fx center">
+      <p class="eyebrow">Why Shanta Meditation</p>
+      <h2 class="h2">Shanta Meditationが、<br>よくある瞑想と違う3つの理由。</h2>
+      <p class="lead" style="max-width:620px;margin-left:auto;margin-right:auto">世の中の多くの瞑想は、「ただ座って目を閉じる」ところで止まっています。Shanta Meditationは、呼吸法という土台から瞑想を積み上げ、一時的な気分転換ではなく、心そのものが変わっていく深さを目指します。</p>
     </div>
     <div class="diff-grid">
       <div class="diff-card fx">
         <p class="diff-num">01</p>
-        <h3>ポーズの完成度を、<br>競わない。</h3>
-        <p>目指すのは美しいポーズではなく、呼吸が深まり、心が静まること。アーサナは「座って呼吸するための準備」という本来の位置づけに戻します。だから比べない、頑張らない。</p>
+        <h3>瞑想が、主役。<br>体は、その準備。</h3>
+        <p>目的は、深い瞑想に入ること。体を動かすのは、こわばりをほどき、座って呼吸を深めるための準備です。見栄えのよいポーズを取ることが目的ではありません。</p>
       </div>
       <div class="diff-card fx">
         <p class="diff-num">02</p>
-        <h3>本場インドで、<br>体感してきたヨーガ。</h3>
-        <p>ヨガの聖地・リシケシをはじめ、本場インドで数多くのヨガクラスや実践を自ら体験。そこで「本当に効く」と体感したエッセンスだけを、日本の暮らしに合うかたちで構成しています。</p>
+        <h3>呼吸法という、<br>確かな土台。</h3>
+        <p>瞑想が深まらないのは、呼吸が浅いまま座っているから。本場インドで体感してきた呼吸法で心の波を静め、自然と深い瞑想に入れる状態をつくります。ここがShanta Meditationの核です。</p>
       </div>
       <div class="diff-card fx">
         <p class="diff-num">03</p>
-        <h3>長くない。簡単。<br>だから、続く。</h3>
-        <p>柔軟性も、根性も、ウェアの新調も要りません。1回は長くなく、動きは簡単。「正しくやる」より「体感する」を大切にしているから、ズボラでも硬くても続けられます。</p>
+        <h3>ごまかさない、<br>本物の瞑想を。</h3>
+        <p>「なんとなく」では、瞑想は深まりません。だからこそ、本気で向き合いたい人のための場です。独学ではたどり着けなかった静けさへ、共に進みます。</p>
       </div>
     </div>
-    <div class="shanta-note fx">
-      <p class="shanta-word">Śānta<span>シャーンタ　サンスクリット語で「静けさ」</span></p>
-      <p>情報も予定も詰め込みすぎた毎日の奥に、誰の中にもある静かな場所。Shanta Yogaは、そこへ還るための時間です。</p>
-      <p style="margin-top:28px"><a href="philosophy.html" style="color:var(--gold);border-bottom:1px solid rgba(201,155,74,.5);padding-bottom:2px;font-size:14.5px;letter-spacing:.12em">ヨーガとは何か、聖典の言葉から知る →</a></p>
+  </div>
+</section>
+
+<!-- SHANTA MEANING -->
+<section class="section meaning" id="meaning">
+  <div class="narrow">
+    <div class="fx">
+      <p class="eyebrow center">The Word</p>
+      <p class="shanta-word">Śānta<span>サンスクリット語で「静けさ」</span></p>
+      <p class="meaning-lead">シャーンタは、ただ静かなだけの状態ではありません。<br>Shanta Meditationが目指すのは、<b>その奥にある、深い静けさ</b>です。</p>
+    </div>
+    <div class="aims">
+      <div class="aim fx"><h3>揺らがない精神</h3><p>何が起きても、心の真ん中が崩れない。外の出来事に振り回されない、静かな軸。</p></div>
+      <div class="aim fx"><h3>満たされている、という状態</h3><p>何かを足さなくても、すでに足りている。欠けた感覚からの、解放。</p></div>
+      <div class="aim fx"><h3>欲求や感情から、自由な心</h3><p>湧き上がるものに飲み込まれず、ただ静かに眺めていられる。そんな自由さ。</p></div>
+    </div>
+    <p class="meaning-close fx">これは一時的なリラックスではなく、<br>生き方そのものが変わっていく静けさです。</p>
+    <p class="meaning-link center fx"><a class="btn-line" href="philosophy.html">瞑想とは何か、聖典の言葉から知る</a></p>
+  </div>
+</section>
+
+<!-- FREE TRIAL -->
+<section class="section trial" id="trial">
+  <div class="narrow">
+    <div class="fx center">
+      <p class="eyebrow">Free Trial</p>
+      <h2 class="h2">まずは、無料で体験を。</h2>
+      <p class="lead">この深さは、言葉では伝えきれません。<br>だから最初の一歩は、無料にしています。</p>
+    </div>
+    <div class="trial-steps">
+      <div class="tstep fx"><span class="tn">01</span><h3>申し込む</h3><p>フォームからお名前とご連絡先を送るだけ。1分で完了します。</p></div>
+      <div class="tstep fx"><span class="tn">02</span><h3>朝、参加する</h3><p>動きやすい服だけでOK。来られない日は、録画（アーカイブ）でも大丈夫です。</p></div>
+      <div class="tstep fx"><span class="tn">03</span><h3>深さを、確かめる</h3><p>無理な勧誘はしません。続けるかどうかは、体験してからご自身で決めてください。</p></div>
+    </div>
+    <div class="trial-cta fx">
+      <a class="btn" href="#reserve"><span class="free">FREE</span>無料体験に申し込む</a>
+      <p class="trial-note">ヨガや瞑想が初めての方も、ご参加いただけます。</p>
     </div>
   </div>
 </section>
 
 <!-- FLOW -->
-<section class="section flow" id="flow">
+<section class="section" id="flow">
   <div class="narrow">
-    <div class="fx">
-      <p class="eyebrow center">Class Flow</p>
-      <h2 class="h2 center">クラスの流れ</h2>
-      <p class="lead center">激しい動きも、長い時間も必要ありません。<br>簡単な動きを「体感する」ことを大切に。終わる頃には、頭の中が静かになっています。</p>
+    <div class="fx center">
+      <p class="eyebrow">The Practice</p>
+      <h2 class="h2">瞑想までの、流れ</h2>
+      <p class="lead">いきなり「無心で座る」ことはしません。<br>呼吸から順に整えていくから、自然と深い瞑想へ入っていけます。</p>
     </div>
     <div class="flow-steps">
-      <div class="step fx">
-        <div class="step-icon">01</div>
-        <div><h3><small>Step 1</small>呼吸を、整える</h3><p>まずは座って、いまの呼吸をただ観察するところから。</p></div>
-      </div>
-      <div class="step fx">
-        <div class="step-icon">02</div>
-        <div><h3><small>Step 2</small>マントラを唱える</h3><p>マントラは、音の振動。声に出した周波数・波動が体の内側に響き、思考のざわめきを静めていきます。</p></div>
-      </div>
-      <div class="step fx">
-        <div class="step-icon">03</div>
-        <div><h3><small>Step 3</small>やさしいアーサナ</h3><p>硬い体でも無理なくできる、ゆるやかな動きで体をほどきます。ポーズの出来ばえは問いません。</p></div>
-      </div>
-      <div class="step fx">
-        <div class="step-icon">04</div>
-        <div><h3><small>Step 4</small>プラーナーヤーマ（呼吸法）</h3><p>本場インドで体感してきた呼吸法で、自律神経を整え、心の波を静めていきます。ここがShanta Yogaの核。</p></div>
-      </div>
-      <div class="step fx">
-        <div class="step-icon">05</div>
-        <div><h3><small>Step 5</small>瞑想　静けさに還る</h3><p>整った呼吸のまま、瞑想へ。「何も考えない」を頑張る必要はありません。自然と静けさが訪れます。</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SCHEDULE -->
-<section class="section sched" id="schedule">
-  <div class="narrow">
-    <div class="fx">
-      <p class="eyebrow center">Schedule</p>
-      <h2 class="h2 center">クラスのスケジュール</h2>
-      <p class="lead center">毎週、月・金・土の朝に行っています。</p>
-    </div>
-    <div class="sched-list">
-      <div class="sched-card fx">
-        <div class="sched-when">
-          <p class="sched-days">毎週 月・金・土</p>
-          <p class="sched-time">5:40<span style="font-size:.6em"> 〜 </span>6:00</p>
-        </div>
-        <div>
-          <h3>朝の瞑想</h3>
-          <p>瞑想のみ。ただ、共に静かに座る時間です。</p>
-        </div>
-      </div>
-      <div class="sched-card fx">
-        <div class="sched-when">
-          <p class="sched-days">毎週 月・金・土</p>
-          <p class="sched-time">6:00<span style="font-size:.6em"> 〜 </span>7:00</p>
-        </div>
-        <div>
-          <h3>朝のクラス</h3>
-          <p>アーサナ・呼吸法・瞑想。Shanta Yogaの3つの柱をひと通り行う時間です。</p>
-        </div>
-      </div>
-      <div class="sched-card fx">
-        <div class="sched-when">
-          <p class="sched-days">毎月 第一土曜</p>
-          <p class="sched-time" style="font-size:20px">哲学クラス</p>
-        </div>
-        <div>
-          <h3>ヨーガ哲学クラスとグループセッション</h3>
-          <p>聖典に学ぶ哲学クラスと、質疑応答などのグループセッション。学びを深める月に一度の時間です。</p>
-        </div>
-      </div>
-    </div>
-    <p class="archive-note fx">すべてのクラスにアーカイブ付き。当日参加できなくても、録画でご覧いただけます。</p>
-    <div class="why-morning fx">
-      <div class="sunrise" aria-hidden="true"></div>
-      <h3>なぜ、朝なのか。</h3>
-      <p>朝は、思考のノイズがまだ始まっていない、一日でいちばん<strong>マインドがクリアな時間</strong>。そしてヨーガは、<strong>空腹の状態で行うこと</strong>が古くから大切にされてきました。呼吸は深く通り、瞑想は自然と深まります。だからShanta Yogaは、朝に行います。</p>
-      <p>静けさから始まった一日は、その日ずっと、あなたの内側に残ります。</p>
-    </div>
-  </div>
-</section>
-
-<!-- PRICE -->
-<section class="section price" id="price">
-  <div class="narrow">
-    <div class="fx">
-      <p class="eyebrow center">Price</p>
-      <h2 class="h2 center">料金</h2>
-      <p class="lead center">週3回のクラスも、瞑想会も、哲学クラスも、アーカイブも。<br>すべて込みのシンプルな月額制です。</p>
-    </div>
-    <div class="price-card fx">
-      <p class="price-label">月額（すべて込み）</p>
-      <p class="price-num">¥9,300<small>/月</small></p>
-      <div class="price-per">
-        <span class="per-chip">1クラスあたり <strong>約700円</strong></span>
-        <span class="per-chip">1日あたり <strong>約300円</strong></span>
-      </div>
-      <div class="price-inc">
-        <div class="inc"><span class="ok">✓</span><div>朝の瞑想会（月・金・土 5:40〜6:00）<small>月12回前後</small></div></div>
-        <div class="inc"><span class="ok">✓</span><div>朝のクラス（月・金・土 6:00〜7:00）<small>月12回前後。アーサナ・呼吸法・瞑想の3つの柱</small></div></div>
-        <div class="inc"><span class="ok">✓</span><div>ヨーガ哲学クラスとグループセッション<small>毎月第一土曜。質疑応答つき</small></div></div>
-        <div class="inc"><span class="ok">✓</span><div>すべてのクラスのアーカイブ視聴<small>参加できない日も、自分のペースで</small></div></div>
-      </div>
-      <p class="price-note">一般的なヨガスタジオの「月4回プラン」とほぼ同じ価格で、<br><strong>月20回以上のライブクラス</strong>に参加できます。</p>
-      <a class="price-cta" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener">まずは体験してみる</a>
+      <div class="step fx"><div class="step-icon">01</div><div><h3><small>Step 1</small>呼吸を、観察する</h3><p>まずは座って、いまの呼吸をただ見つめるところから。</p></div></div>
+      <div class="step fx"><div class="step-icon">02</div><div><h3><small>Step 2</small>体を、整える</h3><p>瞑想の準備として、こわばった体をゆるやかにほぐします。長い動きや難しいポーズはありません。</p></div></div>
+      <div class="step fx"><div class="step-icon">03</div><div><h3><small>Step 3</small>音を、響かせる</h3><p>声に出した音の振動が体の内側に響き、思考のざわめきを静めていきます。</p></div></div>
+      <div class="step fx"><div class="step-icon">04</div><div><h3><small>Step 4</small>呼吸法で、深く鎮める</h3><p>本場インドで体感してきた呼吸法で、心の波を静めていきます。瞑想に入るための、いちばん大切な土台です。</p></div></div>
+      <div class="step fx"><div class="step-icon">05</div><div><h3><small>Step 5</small>瞑想へ、還る</h3><p>整った呼吸のまま、深い静けさへ。頑張って「無」になる必要はありません。自然と、揺らがない心に触れていきます。</p></div></div>
     </div>
   </div>
 </section>
@@ -388,10 +354,10 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
 <!-- VOICES -->
 <section class="section voices" id="voices">
   <div class="wrap">
-    <div class="fx">
-      <p class="eyebrow center">Voices</p>
-      <h2 class="h2 center">参加者の声</h2>
-      <p class="lead center">実際にクラスに参加されている方々の言葉です。</p>
+    <div class="fx center">
+      <p class="eyebrow">Voices</p>
+      <h2 class="h2">参加者の声</h2>
+      <p class="lead">実際にクラスに参加されている方々の言葉です。</p>
     </div>
     <div class="voice-grid">
       <div class="voice fx">
@@ -401,14 +367,14 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
         <p class="who">20代 女性</p>
       </div>
       <div class="voice fx">
-        <h3>気持ちのアップダウンがあっても、<br>戻れる場所ができた。</h3>
-        <p>心が沈む日もあるけれど、クリシュナさんのヨーガで得た心の定位置に戻れる感覚があるから大丈夫と思えるように。以前は自分の精神が乱れても気づけなかったけれど、今は距離感やエネルギーの使い方も自然と整ってきています。</p>
-        <p>41歳で体が硬くなってきたと感じていたけれど、難しいポーズをしなくても身体がゆるみ、ムーラバンダの意識やチャクラの場所の感覚がしっかり持てるように。身体の内側を感じられるヨガです。</p>
+        <h3>気持ちのアップダウンがあっても、戻れる場所ができた。</h3>
+        <p>心が沈む日もあるけれど、クリシュナさんの瞑想で得た心の定位置に戻れる感覚があるから大丈夫と思えるように。以前は自分の精神が乱れても気づけなかったけれど、今は距離感やエネルギーの使い方も自然と整ってきています。</p>
+        <p>41歳で体が硬くなってきたと感じていたけれど、難しいポーズをしなくても身体がゆるみ、身体の内側をしっかり感じられるようになりました。</p>
         <p class="who">40代 女性</p>
       </div>
       <div class="voice fx">
         <h3>足先がポカポカするように。</h3>
-        <p>ずっと冷え性で悩まされていたけど、朝ヨーガに参加し始めてから足先がポカポカするようになってきました。</p>
+        <p>ずっと冷え性で悩まされていたけど、朝の瞑想に参加し始めてから足先がポカポカするようになってきました。</p>
         <p class="who">30代 女性</p>
       </div>
       <div class="voice fx">
@@ -418,8 +384,8 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       </div>
       <div class="voice fx">
         <h3>やるほどに、体感しています。</h3>
-        <p>早起きの抵抗が少なくなってきました（朝に瞑想をやると、いいスタートを切れるのを体感したので）。クリシュナさんのヨガと瞑想で初めて、ヨガと瞑想、呼吸法をセットでやるとこんなに瞑想に入りやすいんだと、やるほどに体感するように思います。</p>
-        <p>マントラは初めてでしたが、振動を感じるのが心地よく、これも瞑想に入っていきやすいと感じました。生理痛にも効くことを体感して、素晴らしいなって思いました。</p>
+        <p>早起きの抵抗が少なくなってきました（朝に瞑想をやると、いいスタートを切れるのを体感したので）。クリシュナさんの瞑想と呼吸法で初めて、呼吸法をセットでやるとこんなに瞑想に入りやすいんだと、やるほどに体感するように思います。</p>
+        <p>音を響かせるのは初めてでしたが、振動を感じるのが心地よく、これも瞑想に入っていきやすいと感じました。</p>
         <p class="who">30代 女性</p>
       </div>
     </div>
@@ -427,25 +393,23 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
 </section>
 
 <!-- TEACHER -->
-<section class="section teacher" id="teacher">
+<section class="section" id="teacher">
   <div class="wrap">
     <div class="teacher-grid">
-      <div class="fx">
-        <div class="portrait"><img src="profile.jpg" alt="慎クリシュナ　木造の空間で静かに坐る姿"></div>
-      </div>
+      <div class="fx"><div class="portrait"><img src="profile.jpg" alt="慎クリシュナ　木造の空間で静かに坐る姿"></div></div>
       <div class="fx">
         <p class="eyebrow">Founder</p>
         <h2 class="teacher-name"><small>Shin Krishna</small>慎 クリシュナ</h2>
         <div class="teacher-bio">
-          <p>日本とインドのハーフ。<strong>自身がヨガに救われた経験</strong>をもとに、ヨガの聖地・インド リシケシでの修行を経て、Shanta Yogaを主宰。</p>
-          <p>本場インドでは数多くのヨガクラスや実践を自ら体験。そのなかで「本当に効く」と体感したものだけを選び、長くなく、簡単にできて、体感を大切にするいまのかたちに磨き上げました。</p>
-          <p>呼吸法と瞑想を軸に、頑張りすぎた体と心を優しくほぐし、内なる静けさ（Shanta）をもたらす場を展開しています。</p>
-          <p>「頑張るヨガ」ではなく、「還るヨーガ」を。ポーズが取れなくても、続かない性格でも、扉はいつでも開いています。</p>
+          <p>日本とインドのハーフ。<b>自身が瞑想に救われた経験</b>をもとに、聖地・インド リシケシでの修行を経て、Shanta Meditationを主宰。</p>
+          <p>本場インドでは数多くの瞑想や実践を自ら体験。そのなかで「本当に心が静まる」と体感したものだけを選び、呼吸法と瞑想を軸にしたいまのかたちに磨き上げました。</p>
+          <p>浅い呼吸のまま座るのではなく、呼吸法から土台をつくることで、誰もが深い瞑想へ入っていける道筋を伝えています。</p>
+          <p>目指すのは、揺らがない精神、満たされた心、そして欲求や感情から自由な状態。本気で瞑想に向き合いたい方へ、扉を開いています。</p>
         </div>
         <div class="creds">
           <span class="cred">インド・リシケシにて修行</span>
-          <span class="cred">本場インドで多様なヨガクラスを体験</span>
-          <span class="cred">呼吸法（プラーナーヤーマ）指導</span>
+          <span class="cred">本場インドで多様な瞑想を体験</span>
+          <span class="cred">呼吸法の指導</span>
           <span class="cred">瞑想指導</span>
         </div>
       </div>
@@ -453,65 +417,109 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section faq" id="faq">
+<!-- SCHEDULE -->
+<section class="section sched" id="schedule">
   <div class="narrow">
-    <div class="fx">
-      <p class="eyebrow center">FAQ</p>
-      <h2 class="h2 center">よくある質問</h2>
+    <div class="fx center">
+      <p class="eyebrow">Schedule</p>
+      <h2 class="h2">クラスのスケジュール</h2>
+      <p class="lead">毎週、月・金・土の朝に行っています。</p>
+    </div>
+    <div class="sched-list">
+      <div class="sched-card fx">
+        <div><p class="sched-days">毎週 月・金・土</p><p class="sched-time">5:40〜6:00</p></div>
+        <div><h3>朝の瞑想</h3><p>瞑想のみ。ただ、共に静かに座る時間です。</p></div>
+      </div>
+      <div class="sched-card fx">
+        <div><p class="sched-days">毎週 月・金・土</p><p class="sched-time">6:00〜7:00</p></div>
+        <div><h3>朝のクラス</h3><p>体を整える・呼吸法・瞑想。Shanta Meditationの流れをひと通り行う時間です。</p></div>
+      </div>
+      <div class="sched-card fx">
+        <div><p class="sched-days">毎月 第一土曜</p><p class="sched-time" style="font-size:19px;font-family:var(--serif)">哲学クラス</p></div>
+        <div><h3>瞑想の哲学クラスとグループセッション</h3><p>聖典に学ぶ哲学クラスと、質疑応答などのグループセッション。学びを深める月に一度の時間です。</p></div>
+      </div>
+    </div>
+    <p class="archive-note fx">すべてのクラスにアーカイブ付き。当日参加できなくても、録画でご覧いただけます。</p>
+    <div class="why-morning fx">
+      <h3>なぜ、朝なのか。</h3>
+      <p>朝は、思考のノイズがまだ始まっていない、一日でいちばん<b>マインドがクリアな時間</b>。そして瞑想は、<b>空腹の状態で行うこと</b>が古くから大切にされてきました。呼吸は深く通り、瞑想は自然と深まります。だからShanta Meditationは、朝に行います。</p>
+      <p>静けさから始まった一日は、その日ずっと、あなたの内側に残ります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section" id="price">
+  <div class="narrow">
+    <div class="fx center">
+      <p class="eyebrow">Price</p>
+      <h2 class="h2">料金</h2>
+      <p class="lead">週3回のクラスも、瞑想会も、哲学クラスも、アーカイブも。<br>すべて込みのシンプルな月額制です。</p>
+    </div>
+    <div class="price-card fx">
+      <p class="price-intro"><b>まずは無料体験から。</b>続けるかどうかは、体験してから決めていただけます。</p>
+      <p class="price-label">Monthly ・ すべて込み</p>
+      <p class="price-num">¥9,300<small>/月</small></p>
+      <div class="price-per">
+        <span class="per-chip">1クラスあたり <b>約700円</b></span>
+        <span class="per-chip">1日あたり <b>約300円</b></span>
+      </div>
+      <div class="price-inc">
+        <div class="inc"><span class="ok"></span><div>朝の瞑想会（月・金・土 5:40〜6:00）<small>月12回前後</small></div></div>
+        <div class="inc"><span class="ok"></span><div>朝のクラス（月・金・土 6:00〜7:00）<small>月12回前後。体を整える・呼吸法・瞑想</small></div></div>
+        <div class="inc"><span class="ok"></span><div>瞑想の哲学クラスとグループセッション<small>毎月第一土曜。質疑応答つき</small></div></div>
+        <div class="inc"><span class="ok"></span><div>すべてのクラスのアーカイブ視聴<small>参加できない日も、自分のペースで</small></div></div>
+      </div>
+      <p class="price-note">一般的なヨガスタジオの「月4回プラン」とほぼ同じ価格で、<br><b>月20回以上のライブクラス</b>に参加できます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="narrow">
+    <div class="fx center">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2">よくある質問</h2>
     </div>
     <div class="faq-list fx">
-      <details>
-        <summary>体がとても硬いのですが、大丈夫ですか？</summary>
-        <p class="faq-a"><strong>むしろ歓迎です。</strong>Shanta Yogaの中心は呼吸と瞑想であり、柔軟性は一切問いません。硬い体のままで受けられるように構成されています。</p>
-      </details>
-      <details>
-        <summary>ヨガがまったく初めてでも参加できますか？</summary>
-        <p class="faq-a">はい。ポーズの知識も経験もゼロで大丈夫です。「呼吸を観察する」ところから始めるので、初めての方ほど変化を感じやすいクラスです。</p>
-      </details>
-      <details>
-        <summary>飽きっぽい・ズボラな性格でも続きますか？</summary>
-        <p class="faq-a">Shanta Yogaは「頑張って続ける」ことを求めません。<strong>ズボラでもできる構成</strong>にしているのは、静けさは努力の先ではなく、力を抜いた先にあるからです。</p>
-      </details>
-      <details>
-        <summary>他のヨガスタジオと何が違うのですか？</summary>
-        <p class="faq-a">多くのヨガはアーサナ（動き）が中心ですが、Shanta Yogaは主宰者が本場インドで数多くのクラスを体験するなかで「本当に効く」と体感したものをもとに、<strong>呼吸法と瞑想を軸</strong>に据えています。1回は長くなく、動きも簡単。運動ではなく「心が静まる体験」が目的です。</p>
-      </details>
-      <details>
-        <summary>朝5時台の参加はハードルが高いのですが……</summary>
-        <p class="faq-a">すべてのクラスに<strong>アーカイブ（録画）が付いています</strong>。当日参加できなくても、ご自身のペースで後から取り組めます。まずは録画から始めて、慣れてきたら朝のライブに合流する方も多いです。</p>
-      </details>
-      <details>
-        <summary>年齢制限や体力の条件はありますか？</summary>
-        <p class="faq-a">ありません。激しい動きがないため、体力に自信がない方やご年配の方にも安心してご参加いただけます。</p>
-      </details>
+      <details><summary>瞑想がまったく初めてでも参加できますか？</summary><p class="faq-a">はい。呼吸を観察するところから、順を追って深めていくので、初めての方ほど「こんなに違うのか」と変化を感じやすい場です。</p></details>
+      <details><summary>マインドフルネスとは、何が違うのですか？</summary><p class="faq-a">気分転換やリラックスで終わらず、<b>呼吸法という土台から瞑想を深めていく</b>のがShanta Meditationです。目指すのは一時的な落ち着きではなく、揺らがない精神、満たされた心、そして感情や欲求から自由な状態です。</p></details>
+      <details><summary>体が硬いのですが、問題ありませんか？</summary><p class="faq-a">問題ありません。体を動かすのは瞑想の準備であり、柔軟性は問いません。硬い体のままで座り、呼吸を深めていけるように構成されています。</p></details>
+      <details><summary>独学で瞑想を続けてきましたが、参加する意味はありますか？</summary><p class="faq-a">独学で「深まっている実感がない」と感じているなら、その多くは呼吸の土台が整っていないことが原因です。<b>呼吸法から組み立て直す</b>ことで、ひとりでは届かなかった深さに進めます。</p></details>
+      <details><summary>朝5時台の参加はハードルが高いのですが……</summary><p class="faq-a">すべてのクラスに<b>アーカイブ（録画）が付いています</b>。当日参加できなくても、ご自身のペースで取り組めます。まずは録画から始めて、慣れてきたら朝のライブに合流する方も多いです。</p></details>
+      <details><summary>年齢や体力の条件はありますか？</summary><p class="faq-a">ありません。激しい動きがないため、体力に自信がない方やご年配の方にも安心してご参加いただけます。</p></details>
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="section final" id="reserve">
-  <div class="wrap">
+  <svg class="enso" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="192"/></svg>
+  <div class="narrow final-inner">
     <div class="fx">
-      <p class="eyebrow" style="color:var(--gold)">Experience</p>
-      <h2>ポーズの先にある静けさを、<br>一度、体験してみませんか。</h2>
-      <p>必要なのは、動きやすい服だけ。<br>硬い体と、疲れた心のまま、どうぞそのまま来てください。</p>
-      <a class="hero-cta" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener">体験クラスを予約する</a>
+      <p class="eyebrow">Experience</p>
+      <h2>言葉では届かない、<br>本物の静けさを、一度。</h2>
+      <p>必要なのは、動きやすい服と、静かに向き合う心だけ。<br>疲れた心のまま、どうぞそのまま来てください。</p>
+      <a class="btn" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener"><span class="free">FREE</span>無料体験に申し込む</a>
       <p class="final-note">ご予約は公式予約サイトから</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p class="brand-f">Shanta Yoga</p>
-  <p>主宰：慎クリシュナ　本場インドの、静けさに還るヨーガ</p>
-  <p style="margin-top:14px;opacity:.6">© 2026 Shanta Yoga. All rights reserved.</p>
+  <p class="brand-f">Shanta Meditation</p>
+  <p>主宰：慎クリシュナ　呼吸法と瞑想を軸にした、本物の瞑想の場</p>
+  <p style="margin-top:14px;color:var(--mist)"><a href="philosophy.html">瞑想の教え</a></p>
+  <p style="margin-top:18px;color:var(--mist)">© 2026 Shanta Meditation. All rights reserved.</p>
 </footer>
+
+<div class="m-cta"><a href="#reserve"><span class="free">FREE</span>まずは無料体験に参加する</a></div>
 
 <script>
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.fx').forEach(el=>io.observe(el));
 </script>
 </body>

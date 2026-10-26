@@ -3,138 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ヨーガとは何か・ヨーガの目的｜Shanta Yoga</title>
-<meta name="description" content="ヨーガ＝ポーズという誤解を、ヨーガ・スートラとバガヴァッド・ギーターの原典から解きほぐす。ヨーガの本来の定義と目的。">
+<title>瞑想のルーツ｜聖典が語る、瞑想とその目的　Shanta Meditation</title>
+<meta name="description" content="ヨガ＝ポーズという誤解を、ヨーガ・スートラとバガヴァッド・ギーターの原典から解きほぐす。聖典が語るゴールは、心を静めること、すなわち瞑想そのもの。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#2e2a26;
-  --ink-soft:#5c554d;
-  --sand:#f6f1e8;
-  --sand-deep:#ece3d3;
-  --terra:#b0602f;
-  --terra-deep:#8f4a20;
-  --gold:#c99b4a;
-  --night:#211d1a;
+  --paper:#fbfaf6;
+  --paper-2:#ffffff;
+  --paper-3:#f3f0e8;
+  --sumi:#201e1a;
+  --sumi-2:#4b463e;
+  --mist:#8d887d;
+  --line:rgba(32,30,26,.12);
+  --line-soft:rgba(32,30,26,.07);
+  --accent:#9a7a4a;
   --serif:'Shippori Mincho','Hiragino Mincho ProN',serif;
   --sans:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif;
   --latin:'Cormorant Garamond',serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--sand);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--sans);color:var(--sumi);background:var(--paper);line-height:2;font-weight:300;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-.narrow{max-width:720px;margin:0 auto;padding:0 24px}
-.section{padding:110px 0}
-.eyebrow{font-family:var(--latin);font-size:14px;letter-spacing:.35em;text-transform:uppercase;color:var(--terra);margin-bottom:18px}
-.h2{font-family:var(--serif);font-size:clamp(26px,4.2vw,38px);font-weight:600;line-height:1.6;letter-spacing:.06em}
-.lead{color:var(--ink-soft);margin-top:22px;font-size:16.5px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+.narrow{max-width:680px;margin:0 auto;padding:0 28px}
+.section{padding:clamp(76px,12vw,130px) 0}
+.eyebrow{font-family:var(--latin);font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+.h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,33px);font-weight:500;line-height:1.75;letter-spacing:.09em}
+.lead{color:var(--sumi-2);margin-top:24px;font-size:16px;line-height:2.1}
 .center{text-align:center}
-.fx{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.fx{opacity:0;transform:translateY(24px);transition:opacity 1.1s ease,transform 1.1s ease}
 .fx.on{opacity:1;transform:none}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;transition:background .4s,box-shadow .4s}
-nav.scrolled{background:rgba(246,241,232,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(46,42,38,.08)}
-.brand{font-family:var(--latin);font-size:19px;letter-spacing:.3em;font-weight:500;color:var(--sand)}
-nav.scrolled .brand{color:var(--ink)}
-.nav-links{display:flex;gap:30px;align-items:center;font-size:13.5px;letter-spacing:.12em}
-.nav-links a{color:var(--sand);opacity:.9;transition:opacity .3s}
-nav.scrolled .nav-links a{color:var(--ink)}
-.nav-links a:hover{opacity:.6}
-.nav-cta{background:var(--terra);color:#fff !important;padding:10px 22px;border-radius:999px;opacity:1 !important;transition:background .3s}
-.nav-cta:hover{background:var(--terra-deep)}
-@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 30px;transition:background .5s,box-shadow .5s,padding .5s}
+nav.scrolled{background:rgba(251,250,246,.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px}
+.brand{font-family:var(--latin);font-size:20px;letter-spacing:.3em;font-weight:500}
+.nav-links{display:flex;gap:30px;align-items:center;font-size:13px;letter-spacing:.14em;color:var(--sumi-2)}
+.nav-links a:not(.nav-cta){transition:color .3s}
+.nav-links a:not(.nav-cta):hover{color:var(--sumi)}
+.nav-cta{background:var(--sumi);color:var(--paper) !important;padding:10px 22px;border-radius:2px;letter-spacing:.12em}
+.nav-cta:hover{background:#000}
+@media(max-width:700px){.nav-links a:not(.nav-cta){display:none}}
 
 /* page hero */
-.phero{position:relative;min-height:72svh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--sand);background:linear-gradient(175deg,#1c1a20 0%,#2c2330 40%,#59372e 80%,#7d4a2c 100%);overflow:hidden;padding:140px 24px 100px}
-.phero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 50% 100%,rgba(255,196,120,.22),transparent 70%);pointer-events:none}
-.phero-inner{position:relative;z-index:2;max-width:820px}
-.phero h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.6vw,50px);line-height:1.75;letter-spacing:.08em}
-.phero h1 em{font-style:normal;color:#f4c988}
-.phero-sub{margin-top:28px;font-size:clamp(14px,2vw,16.5px);letter-spacing:.14em;opacity:.88}
+.phero{position:relative;min-height:66svh;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--paper);overflow:hidden;padding:150px 24px 90px}
+.enso{position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:min(70vw,500px);height:min(70vw,500px);opacity:.5;pointer-events:none}
+.enso circle{fill:none;stroke:#e4d9c4;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1210;stroke-dashoffset:150;transform:rotate(128deg);transform-origin:center}
+.phero-inner{position:relative;z-index:2;max-width:760px}
+.phero h1{font-family:var(--serif);font-weight:500;font-size:clamp(28px,5.4vw,46px);line-height:1.8;letter-spacing:.1em}
+.phero-sub{margin-top:28px;font-size:clamp(13.5px,1.9vw,16px);letter-spacing:.12em;color:var(--sumi-2);line-height:2.1}
 
 /* misconception */
-.big-stat{margin:56px auto 0;max-width:640px;background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:20px;padding:48px 36px;text-align:center;box-shadow:0 4px 24px rgba(46,42,38,.05)}
-.big-stat .num{font-family:var(--latin);font-size:clamp(56px,9vw,84px);line-height:1;color:var(--terra)}
-.big-stat .num small{font-size:.35em;letter-spacing:.1em;color:var(--ink-soft)}
-.big-stat p{margin-top:18px;color:var(--ink-soft);font-size:14.5px}
+.big-stat{margin:52px auto 0;max-width:600px;background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:48px 36px;text-align:center}
+.big-stat .num{font-family:var(--latin);font-size:clamp(56px,9vw,84px);line-height:1;color:var(--accent);font-weight:500}
+.big-stat .num small{font-size:.32em;letter-spacing:.1em;color:var(--sumi-2)}
+.big-stat p{margin-top:18px;color:var(--sumi-2);font-size:14.5px}
 
 /* quote block */
-.quote{margin:64px auto 0;max-width:680px;text-align:center;position:relative;padding:0 12px}
-.quote::before{content:"";display:block;width:56px;height:1px;background:var(--gold);margin:0 auto 34px}
-.quote .deva{font-size:clamp(20px,3.4vw,27px);color:var(--terra-deep);letter-spacing:.04em;line-height:1.9}
-.quote .roman{font-family:var(--latin);font-style:italic;font-size:16px;letter-spacing:.12em;color:var(--ink-soft);margin-top:10px}
-.quote .ja{font-family:var(--serif);font-size:clamp(20px,3.2vw,26px);font-weight:600;line-height:2;letter-spacing:.08em;margin-top:26px}
-.quote .src{font-family:var(--latin);font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--terra);margin-top:20px}
-.quote .note{font-size:13.5px;color:var(--ink-soft);margin-top:16px;line-height:2}
-.dark .quote .deva{color:var(--gold)}
-.dark .quote .roman{color:rgba(246,241,232,.6)}
-.dark .quote .ja{color:var(--sand)}
-.dark .quote .note{color:rgba(246,241,232,.65)}
+.quote{margin:60px auto 0;max-width:680px;text-align:center;position:relative;padding:0 12px}
+.quote::before{content:"";display:block;width:50px;height:1px;background:var(--accent);margin:0 auto 32px}
+.quote .deva{font-family:var(--serif);font-size:clamp(19px,3.2vw,25px);color:var(--accent);letter-spacing:.04em;line-height:1.9}
+.quote .roman{font-family:var(--latin);font-style:italic;font-size:16px;letter-spacing:.12em;color:var(--mist);margin-top:12px}
+.quote .ja{font-family:var(--serif);font-size:clamp(20px,3.2vw,26px);font-weight:500;line-height:2;letter-spacing:.08em;margin-top:26px}
+.quote .src{font-family:var(--latin);font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-top:20px}
+.quote .note{font-size:13.5px;color:var(--sumi-2);margin-top:16px;line-height:2}
+.dark .quote .deva{color:#caa96e}
+.dark .quote .roman{color:rgba(251,250,246,.55)}
+.dark .quote .ja{color:var(--paper)}
+.dark .quote .note{color:rgba(251,250,246,.6)}
 
 /* eight limbs */
-.limbs{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.limbs{margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 @media(max-width:820px){.limbs{grid-template-columns:repeat(2,1fr)}}
-.limb{background:#fff;border:1px solid rgba(46,42,38,.08);border-radius:14px;padding:22px 16px;text-align:center;box-shadow:0 2px 10px rgba(46,42,38,.04)}
-.limb .no{font-family:var(--latin);font-size:13px;letter-spacing:.2em;color:var(--gold)}
-.limb h4{font-family:var(--serif);font-size:16.5px;font-weight:600;margin-top:6px;letter-spacing:.04em}
-.limb p{font-size:12.5px;color:var(--ink-soft);margin-top:4px}
-.limb.hl{background:var(--terra);border-color:var(--terra)}
-.limb.hl .no{color:rgba(255,255,255,.7)}
-.limb.hl h4,.limb.hl p{color:#fff}
-.limbs-note{margin-top:30px;text-align:center;font-size:14.5px;color:var(--ink-soft)}
-.limbs-note strong{color:var(--terra-deep)}
+.limb{background:var(--paper-2);border:1px solid var(--line);border-radius:3px;padding:24px 16px;text-align:center}
+.limb .no{font-family:var(--latin);font-size:13px;letter-spacing:.2em;color:var(--mist)}
+.limb h4{font-family:var(--serif);font-size:16.5px;font-weight:500;margin-top:8px;letter-spacing:.04em}
+.limb p{font-size:12.5px;color:var(--sumi-2);margin-top:6px}
+.limb.hl{background:var(--sumi);border-color:var(--sumi)}
+.limb.hl .no{color:#caa96e}
+.limb.hl h4{color:var(--paper)}
+.limb.hl p{color:rgba(251,250,246,.7)}
+.limb.goal{border-color:var(--accent)}
+.limb.goal .no{color:var(--accent)}
+.limbs-note{margin-top:34px;text-align:center;font-size:14.5px;color:var(--sumi-2);line-height:2}
+.limbs-note b{color:var(--sumi);font-weight:500}
 
 /* etymology */
-.ety{background:linear-gradient(180deg,var(--sand) 0%,var(--sand-deep) 100%)}
-.yuj{font-family:var(--latin);font-size:clamp(40px,6vw,60px);letter-spacing:.18em;color:var(--terra);text-align:center}
-.yuj span{display:block;font-size:.32em;letter-spacing:.3em;color:var(--ink-soft);margin-top:8px}
+.ety{background:var(--paper-3)}
+.yuj{font-family:var(--latin);font-size:clamp(40px,6vw,60px);letter-spacing:.18em;color:var(--accent);text-align:center;font-weight:500}
+.yuj span{display:block;font-size:.3em;letter-spacing:.3em;color:var(--sumi-2);margin-top:10px;font-family:var(--sans)}
 
 /* purpose (dark) */
-.dark{background:var(--night);color:var(--sand)}
-.dark .eyebrow{color:var(--gold)}
-.dark .lead{color:rgba(246,241,232,.75)}
-.purpose-close{margin-top:80px;text-align:center;border-top:1px solid rgba(246,241,232,.12);padding-top:60px}
-.purpose-close p{max-width:640px;margin:0 auto;font-family:var(--serif);font-size:clamp(18px,2.8vw,23px);line-height:2.2;letter-spacing:.08em}
-.purpose-close p strong{color:var(--gold);font-weight:600}
+.dark{background:var(--sumi);color:var(--paper)}
+.dark .eyebrow{color:#caa96e}
+.dark .lead{color:rgba(251,250,246,.72)}
+.dark .h2{color:var(--paper)}
+.purpose-close{margin-top:80px;text-align:center;border-top:1px solid rgba(251,250,246,.16);padding-top:62px}
+.purpose-close p{max-width:620px;margin:0 auto;font-family:var(--serif);font-size:clamp(18px,2.8vw,23px);line-height:2.3;letter-spacing:.08em;color:var(--paper)}
+.purpose-close p b{color:#caa96e;font-weight:500}
 
 /* cta */
-.pcta{background:linear-gradient(175deg,#2c2330 0%,#59372e 55%,#a05a33 100%);text-align:center;color:var(--sand);position:relative;overflow:hidden}
-.pcta::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 50% 100%,rgba(255,196,120,.3),transparent 70%)}
-.pcta .wrap{position:relative;z-index:2}
-.pcta h2{font-family:var(--serif);font-size:clamp(24px,4vw,34px);font-weight:600;line-height:1.9;letter-spacing:.08em}
-.pcta p{margin-top:22px;opacity:.85;font-size:15.5px;letter-spacing:.08em}
-.hero-cta{display:inline-block;margin-top:38px;background:rgba(246,241,232,.96);color:var(--terra-deep);font-weight:700;letter-spacing:.14em;padding:17px 46px;border-radius:999px;font-size:15px;transition:transform .3s,box-shadow .3s}
-.hero-cta:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.3)}
-.back-link{display:inline-block;margin-top:22px;font-size:13.5px;letter-spacing:.14em;color:rgba(246,241,232,.75);border-bottom:1px solid rgba(246,241,232,.3);padding-bottom:2px}
+.pcta{background:var(--paper);text-align:center;position:relative;overflow:hidden}
+.pcta .enso{opacity:.4}
+.pcta .inner{position:relative;z-index:2}
+.pcta h2{font-family:var(--serif);font-size:clamp(22px,4vw,33px);font-weight:500;line-height:1.9;letter-spacing:.08em}
+.pcta p{margin-top:24px;color:var(--sumi-2);font-size:15px;letter-spacing:.06em}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--sumi);color:var(--paper);letter-spacing:.14em;padding:18px 40px;border-radius:2px;font-size:14.5px;margin-top:40px;transition:background .35s,transform .35s}
+.btn:hover{background:#000;transform:translateY(-2px)}
+.btn .free{font-family:var(--latin);font-size:11px;letter-spacing:.2em;background:var(--accent);color:#fff;padding:3px 9px;border-radius:2px}
+.back-link{display:inline-block;margin-top:26px;font-size:13.5px;letter-spacing:.14em;color:var(--sumi-2);border-bottom:1px solid var(--line);padding-bottom:3px}
 
-footer{background:var(--night);color:rgba(246,241,232,.55);text-align:center;padding:44px 24px;font-size:12.5px;letter-spacing:.15em}
-footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;color:rgba(246,241,232,.85);margin-bottom:10px}
-.trans-note{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:60px;letter-spacing:.08em}
-.dark .trans-note{color:rgba(246,241,232,.45)}
+footer{background:var(--paper-3);color:var(--sumi-2);text-align:center;padding:52px 24px;font-size:12.5px;letter-spacing:.14em;border-top:1px solid var(--line)}
+footer .brand-f{font-family:var(--latin);letter-spacing:.34em;font-size:16px;color:var(--sumi);margin-bottom:12px}
+.trans-note{font-size:12px;color:var(--mist);text-align:center;margin-top:56px;letter-spacing:.08em}
+.dark .trans-note{color:rgba(251,250,246,.4)}
 </style>
 </head>
 <body>
 
 <nav id="nav">
-  <a class="brand" href="index.html">Shanta Yoga</a>
+  <a class="brand" href="index.html">Shanta Meditation</a>
   <div class="nav-links">
     <a href="index.html">ホーム</a>
-    <a href="#what">ヨーガとは</a>
-    <a href="#purpose">ヨーガの目的</a>
-    <a class="nav-cta" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener">体験する</a>
+    <a href="#what">瞑想のルーツ</a>
+    <a href="#purpose">瞑想の目的</a>
+    <a class="nav-cta" href="index.html#reserve">無料体験する</a>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
 <header class="phero">
+  <svg class="enso" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="192"/></svg>
   <div class="phero-inner">
-    <p class="eyebrow" style="color:var(--gold)">Philosophy</p>
-    <h1>ヨーガとは、<em>何か。</em></h1>
-    <p class="phero-sub">「ポーズのこと」と答える前に、知ってほしいことがあります。<br>数千年前の聖典は、ヨーガをまったく別のものとして定義しています。</p>
+    <p class="eyebrow">Philosophy</p>
+    <h1>瞑想のルーツは、<br>どこにあるのか。</h1>
+    <p class="phero-sub">「ヨガ＝ポーズ」と思われがちですが、数千年前の聖典は、<br>そのゴールを「心を静めること」、つまり瞑想そのものだと語っています。</p>
   </div>
 </header>
 
@@ -148,7 +153,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
     </div>
     <div class="big-stat fx">
       <p class="num">3<small>&nbsp;/&nbsp;196節</small></p>
-      <p>ポーズの取り方や見た目についての記述は、一切ありません。<br>ヨーガにおけるアーサナの定義は、たったこれだけです。</p>
+      <p>ポーズの取り方や見た目についての記述は、一切ありません。<br>聖典におけるアーサナの定義は、たったこれだけです。</p>
     </div>
     <div class="quote fx">
       <p class="deva">स्थिरसुखमासनम्</p>
@@ -165,20 +170,20 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
   <div class="wrap">
     <div class="fx">
       <p class="eyebrow center">Ashtanga, The Eight Limbs</p>
-      <h2 class="h2 center">アーサナは、8つの段階の<br>「3番目」にすぎない。</h2>
-      <p class="lead center narrow" style="padding:0">『ヨーガ・スートラ』はヨーガへの道を8つの段階（八支則・アシュターンガ）で示します。ポーズはその一部であり、通過点。その先に呼吸法があり、瞑想があり、ゴールがあります。</p>
+      <h2 class="h2 center">ポーズは8つの段階の「3番目」。<br>瞑想は、その先にある。</h2>
+      <p class="lead center narrow" style="padding:0">『ヨーガ・スートラ』は、心を静めるまでの道のりを8つの段階で示します。ポーズ（03）は入り口にすぎず、その先に呼吸法（04）があり、集中（06）があり、瞑想（07）があり、ゴールがあります。</p>
     </div>
     <div class="limbs fx">
       <div class="limb"><p class="no">01</p><h4>ヤマ</h4><p>他者への在り方</p></div>
       <div class="limb"><p class="no">02</p><h4>ニヤマ</h4><p>自分への在り方</p></div>
       <div class="limb hl"><p class="no">03</p><h4>アーサナ</h4><p>坐法（ここがポーズ）</p></div>
-      <div class="limb"><p class="no">04</p><h4>プラーナーヤーマ</h4><p>呼吸法</p></div>
-      <div class="limb"><p class="no">05</p><h4>プラティヤーハーラ</h4><p>感覚を内へ向ける</p></div>
-      <div class="limb"><p class="no">06</p><h4>ダーラナー</h4><p>集中</p></div>
-      <div class="limb"><p class="no">07</p><h4>ディヤーナ</h4><p>瞑想</p></div>
-      <div class="limb"><p class="no">08</p><h4>サマーディ</h4><p>深い静寂との一体</p></div>
+      <div class="limb"><p class="no">04</p><h4>呼吸法</h4><p>呼吸を整える</p></div>
+      <div class="limb"><p class="no">05</p><h4>感覚を内へ</h4><p>意識を内側へ向ける</p></div>
+      <div class="limb"><p class="no">06</p><h4>集中</h4><p>一点にとどめる</p></div>
+      <div class="limb goal"><p class="no">07</p><h4>瞑想</h4><p>静けさへ入る</p></div>
+      <div class="limb goal"><p class="no">08</p><h4>深い静寂</h4><p>静けさとの一体</p></div>
     </div>
-    <p class="limbs-note fx">一般的なヨガスタジオで行われているのは、主に<strong>03のみ</strong>。<br>Shanta Yogaは03を入り口に、04〜08までの道のりをご案内します。</p>
+    <p class="limbs-note fx">一般的なヨガスタジオで行われているのは、主に<b>03のポーズ</b>まで。<br>Shanta Meditationは、その先の<b>呼吸法から瞑想まで</b>をご案内します。</p>
   </div>
 </section>
 
@@ -187,8 +192,8 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
   <div class="narrow">
     <div class="fx">
       <p class="eyebrow center">The Definition</p>
-      <h2 class="h2 center">では、ヨーガとは何か。</h2>
-      <p class="lead center">ヨーガ（yoga）の語源は、サンスクリット語の動詞「ユジュ（yuj）」。<br>「結ぶ・つなぐ」という意味です。散らばった心を一点に結び、自分自身とつながること。</p>
+      <h2 class="h2 center">聖典は、瞑想を<br>こう定義している。</h2>
+      <p class="lead center">「ヨーガ（yoga）」の語源は、サンスクリット語の動詞「ユジュ（yuj）」。<br>「結ぶ・つなぐ」という意味です。散らばった心を一点に結び、自分自身とつながること。それが瞑想です。</p>
     </div>
     <p class="yuj fx" style="margin-top:48px">√ yuj<span>ユジュ　結ぶ、つなぐ</span></p>
     <div class="quote fx">
@@ -196,7 +201,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">yogaś citta-vṛtti-nirodhaḥ</p>
       <p class="ja">ヨーガとは、心のはたらきを<br>静めることである。</p>
       <p class="src">ヨーガ・スートラ 1章2節</p>
-      <p class="note">経典の冒頭に置かれた、ヨーガの正式な定義。体の話ではなく、心の話から始まります。</p>
+      <p class="note">経典の冒頭に置かれた、正式な定義。体の話ではなく、心を静めること、つまり瞑想の話から始まります。</p>
     </div>
     <div class="quote fx">
       <p class="deva">समत्वं योग उच्यते</p>
@@ -210,7 +215,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">yogaḥ karmasu kauśalam</p>
       <p class="ja">ヨーガとは、<br>行為における巧みさである。</p>
       <p class="src">バガヴァッド・ギーター 2章50節</p>
-      <p class="note">マットの上だけでなく、働き、暮らし、人と関わる。日常のすべてがヨーガの実践の場になります。</p>
+      <p class="note">座っているときだけでなく、働き、暮らし、人と関わる。整った心は、日常のすべてに表れます。</p>
     </div>
     <p class="trans-note fx">※ 日本語訳はわかりやすさを優先した意訳です。</p>
   </div>
@@ -221,7 +226,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
   <div class="narrow">
     <div class="fx">
       <p class="eyebrow center">The Purpose</p>
-      <h2 class="h2 center">ヨーガの目的</h2>
+      <h2 class="h2 center">瞑想の、目的</h2>
       <p class="lead center">柔らかい体になることでも、美しいポーズでもありません。<br>聖典が語る目的は、一貫しています。</p>
     </div>
 
@@ -230,7 +235,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">tadā draṣṭuḥ svarūpe 'vasthānam</p>
       <p class="ja">そのとき、本来の自分に<br>とどまることができる。</p>
       <p class="src">ヨーガ・スートラ 1章3節</p>
-      <p class="note">心のはたらきが静まったとき（1章2節）、その静けさの奥に現れるものが、本来の自分。<br>ヨーガの目的は、何かに「なる」ことではなく、本来の自分に「還る」ことです。</p>
+      <p class="note">心のはたらきが静まったとき（1章2節）、その静けさの奥に現れるものが、本来の自分。<br>瞑想の目的は、何かに「なる」ことではなく、本来の自分に「還る」ことです。</p>
     </div>
 
     <div class="quote fx">
@@ -238,7 +243,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">duḥkha-saṁyoga-viyogaṁ yoga-saṁjñitam</p>
       <p class="ja">苦しみとの結びつきから<br>離れること。それをヨーガと知れ。</p>
       <p class="src">バガヴァッド・ギーター 6章23節</p>
-      <p class="note">不安、焦り、比較、頑張りすぎ。心に絡みついた苦しみをそっとほどいていくこと。<br>それ自体がヨーガだと、ギーターは言い切ります。</p>
+      <p class="note">不安、焦り、比較。心に絡みついた苦しみを、瞑想を通してそっとほどいていくこと。<br>それ自体がヨーガだと、ギーターは言い切ります。</p>
     </div>
 
     <div class="quote fx">
@@ -246,7 +251,7 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">yuktāhāra-vihārasya yukta-ceṣṭasya karmasu</p>
       <p class="ja">食べることも、休むことも、働くことも、<br>眠ることも「ほどよい」者にとって、<br>ヨーガは苦しみを取り除くものとなる。</p>
       <p class="src">バガヴァッド・ギーター 6章17節</p>
-      <p class="note">ストイックである必要はない、と聖典自身が語っています。<br>Shanta Yogaが「ズボラでも、硬くてもできる」構成なのは、この教えの通りです。</p>
+      <p class="note">極端な禁欲も、頑張りすぎも要らない。心と暮らしを「ほどよく」整えることが、深い瞑想への道だと、聖典自身が語っています。</p>
     </div>
 
     <div class="quote fx">
@@ -254,32 +259,33 @@ footer .brand-f{font-family:var(--latin);letter-spacing:.4em;font-size:15px;colo
       <p class="roman">yathā dīpo nivāta-stho neṅgate</p>
       <p class="ja">風のない場所に置かれた灯火は、<br>揺れることがない。</p>
       <p class="src">バガヴァッド・ギーター 6章19節</p>
-      <p class="note">整えられた心の静けさを、ギーターはこの美しい比喩で描きました。<br>この「揺れない灯火」の状態こそ、サンスクリット語でいう Śānta（シャーンタ）、静けさです。</p>
+      <p class="note">瞑想によって整えられた、揺れない心。ギーターはそれをこの美しい比喩で描きました。<br>この「揺れない灯火」の状態こそ、サンスクリット語でいう Śānta（シャーンタ）、静けさです。</p>
     </div>
 
     <div class="purpose-close fx">
-      <p>心を静め、苦しみをほどき、<br>本来の自分に還ること。<br>それがヨーガの目的であり、<br><strong>Shanta Yoga</strong>という名前の由来です。</p>
+      <p>心を静め、苦しみをほどき、<br>本来の自分に還ること。<br>それが瞑想の目的であり、<br><b>Shanta Meditation</b>という名前の由来です。</p>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="section pcta">
-  <div class="wrap">
+  <svg class="enso" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="192"/></svg>
+  <div class="narrow inner">
     <div class="fx">
-      <h2>知識で終わらせずに、<br>一度、体感してみませんか。</h2>
-      <p>数千年前の智慧を、いまの暮らしに合うかたちで。<br>必要なのは動きやすい服だけです。</p>
-      <a class="hero-cta" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener">体験クラスを予約する</a>
+      <h2>知識で終わらせずに、<br>一度、その静けさを体感してみませんか。</h2>
+      <p>数千年前の智慧を、いまの暮らしに合うかたちで。<br>必要なのは、動きやすい服だけです。</p>
+      <a class="btn" href="https://pranicwellness.stores.jp/" target="_blank" rel="noopener"><span class="free">FREE</span>無料体験に申し込む</a>
       <br>
-      <a class="back-link" href="index.html">← ホームに戻る</a>
+      <a class="back-link" href="index.html">ホームに戻る</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p class="brand-f">Shanta Yoga</p>
-  <p>主宰：慎クリシュナ　本場インドの、静けさに還るヨーガ</p>
-  <p style="margin-top:14px;opacity:.6">© 2026 Shanta Yoga. All rights reserved.</p>
+  <p class="brand-f">Shanta Meditation</p>
+  <p>主宰：慎クリシュナ　呼吸法と瞑想を軸にした、本物の瞑想の場</p>
+  <p style="margin-top:14px;color:var(--mist)">© 2026 Shanta Meditation. All rights reserved.</p>
 </footer>
 
 <script>
